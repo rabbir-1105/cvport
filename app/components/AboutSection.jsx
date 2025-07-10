@@ -1,6 +1,6 @@
 "use client";
 import React, { useTransition, useState } from 'react';
-import Img from 'next/image';
+import Image from 'next/image'; 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import TabButton from './TabButton';
@@ -65,7 +65,13 @@ const AboutSection = () => {
   return (
     <section className='text-white' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16'>
-      <Img src="/images/about-image1.jpg" width={500} height={500} alt="About me" />
+      <Image 
+          src="/images/about-image1.jpg" 
+          width={500} 
+          height={500} 
+          alt="About me" 
+          className="rounded-lg object-cover"
+        />
 
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-pink-700 mb-4'>About Me</h2>

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Img from 'next/image';
+import Image from 'next/image';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
@@ -43,13 +43,14 @@ const HeroSection = () => {
         {/* Image section */}
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
   <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#181818]">
-    <Img
-      src="/images/hero-image.jpg"
-      alt="Portrait of Mayly"
-      width={400}
-      height={400}
-      className="object-cover w-full h-full"
-    />
+  <Image
+  src="/images/hero-image.jpg"
+  alt="Portrait of Mayly"
+  width={400}
+  height={400}
+  className="object-cover w-full h-full"
+/>
+
   </div>
 </div>
       </div>
