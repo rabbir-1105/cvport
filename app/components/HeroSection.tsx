@@ -44,8 +44,8 @@ const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
   <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#181818]">
   <Image
-  src="/blob.png"
-  alt="My blob"
+  src="/public/hero-image.jpg"
+  alt="Portrait of Mayly"
   width={300}
   height={300}
   style={{
