@@ -44,11 +44,13 @@ const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
   <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden bg-[#181818]">
   <Image
-  src="/images/hero-image.jpg"
-  alt="Portrait of Mayly"
-  width={400}
-  height={400}
-  className="object-cover w-full h-full"
+  src="/blob.png"
+  alt="My blob"
+  width={300}
+  height={300}
+  style={{
+    filter: 'sepia(100%) saturate(300%) hue-rotate(-10deg) contrast(1.1) brightness(0.9)',
+  }}
 />
 
   </div>
