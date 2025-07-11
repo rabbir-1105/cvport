@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaEnvelope, } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaEnvelope, FaPhoneAlt} from 'react-icons/fa';
 
 const EmailSection = () => {
   return (
@@ -12,6 +12,7 @@ const EmailSection = () => {
         
        
         <div className='flex justify-center items-center gap-6'>
+             {/* Facebook */}
           <a
             href='https://www.facebook.com/may.ghindavong/'
             target='_blank'
@@ -20,7 +21,7 @@ const EmailSection = () => {
           >
             <FaFacebookF className='text-blue-500 text-xl' />
           </a>
-
+             {/* Instagram */}
           <a
             href='https://www.instagram.com'
             target='_blank'
@@ -29,11 +30,19 @@ const EmailSection = () => {
           >
             <FaInstagram className='text-pink-500 text-xl' />
           </a>
+           {/* Email */}
           <a
             href='mailto:maychindavong1102@gmail.com'
             className='bg-[#18191E] hover:bg-[#33353F] p-4 rounded-full transition duration-300'
           >
             <FaEnvelope className='text-red-400 text-xl' />
+          </a>
+           {/* Phone */}
+           <a
+            href='tel:020 59637018'
+            className='bg-[#18191E] hover:bg-[#33353F] p-4 rounded-full transition duration-300'
+          >
+            <FaPhoneAlt className='text-green-400 text-xl' />
           </a>
         </div>
       </div>

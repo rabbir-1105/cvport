@@ -3,6 +3,10 @@ import React, { useTransition, useState } from 'react';
 import Image from 'next/image'; 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
+import { FaMusic, FaSearch, FaCamera, FaDumbbell } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap} from 'react-icons/fa';
+
+
 import TabButton from './TabButton';
 
 const TAB_DATA = [
@@ -12,22 +16,22 @@ const TAB_DATA = [
     content: (
       <ul className='list-none pl-2 space-y-2'>
         <li className='flex items-center gap-2'>
-          <FaHtml5 className='text-orange-600' /> HTML
+          <FaHtml5 className='text-orange-600' /> HTML.
         </li>
         <li className='flex items-center gap-2'>
-          <FaCss3Alt className='text-blue-500' /> CSS
+          <FaCss3Alt className='text-blue-500' /> CSS.
         </li>
         <li className='flex items-center gap-2'>
-          <FaJs className='text-yellow-400' /> JavaScript
+          <FaJs className='text-yellow-400' /> JavaScript.
         </li>
         <li className='flex items-center gap-2'>
-          <FaReact className='text-cyan-400' /> React (Basic)
+          <FaReact className='text-cyan-400' /> React (Basic).
         </li>
         <li className='flex items-center gap-2'>
-          <SiNextdotjs className='text-black' /> Next.js (Basic)
+          <SiNextdotjs className='text-black' /> Next.js (Basic).
         </li>
         <li className='flex items-center gap-2'>
-          <SiTailwindcss className='text-sky-400' /> Tailwind CSS (Basic)
+          <SiTailwindcss className='text-sky-400' /> Tailwind CSS (Basic).
         </li>
       </ul>
     )
@@ -36,18 +40,52 @@ const TAB_DATA = [
     title: "Education",
     id: "Education",
     content: (
-      <ul className='list-disc pl-2'>
-        <li>University of Institute of Information and Communication Technology</li>
-      </ul>
+       <ul className="space-y-3 text-white pl-2">
+      <li className="flex items-start gap-3">
+        <FaGraduationCap className="text-purple-500 mt-1" />
+        <span>
+          University of Institute of Information and Communication Technology.
+        </span>
+      </li>
+    </ul>
     )
   },
   {
     title: "Experience",
     id: "Experience",
     content: (
-      <ul className='list-disc pl-2'>
-        <li>KOREA-ASEAN DIGITAL ACADEMY (KADA) — Class B: Full Stack Development (Training)</li>
-      </ul>
+      <ul className="space-y-3 text-white pl-2">
+      <li className="flex items-start gap-3">
+        <FaBriefcase className="text-blue-500 mt-1" />
+        <span>
+          <strong>KOREA-ASEAN DIGITAL ACADEMY (KADA)</strong> — Class B: Full Stack Development (Training).
+        </span>
+      </li>
+    </ul>
+    )
+  },
+  {
+    title: "Interests",
+    id: "Interests",
+    content: (
+      <ul className="space-y-3 text-white pl-2">
+      <li className="flex items-center gap-3">
+        <FaMusic className="text-pink-500" />
+        Like listening to music.
+      </li>
+      <li className="flex items-center gap-3">
+        <FaSearch className="text-yellow-400" />
+        Find information from the internet.
+      </li>
+      <li className="flex items-center gap-3">
+        <FaCamera className="text-purple-400" />
+        Like to take pictures.
+      </li>
+      <li className="flex items-center gap-3">
+        <FaDumbbell className="text-green-400" />
+        Do some exercise sometimes.
+      </li>
+    </ul>
     )
   }
 ];
@@ -102,6 +140,12 @@ const AboutSection = () => {
               active={tab === "Experience"}
             >
               Experience
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("Interests")}
+              active={tab === "Interests"}
+            >
+              Interests
             </TabButton>
           </div>
           <div className='mt-8'>
