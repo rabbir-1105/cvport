@@ -66,13 +66,13 @@ const AboutSection = () => {
     <section className='text-white' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16'>
       <Image 
-          src="/public/about-image1.jpg"          
+          src="/about-image1.jpg"          
           alt="About me" 
           width={500} 
           height={500} 
           className="rounded-lg object-cover"
           style={{
-            filter: 'sepia(100%) saturate(300%) hue-rotate(-10deg) contrast(1.1) brightness(0.9)',
+            filter: 'sepia(10%) brightness(1.05) contrast(1.05) saturate(1.2)',
           }}
         />
 
